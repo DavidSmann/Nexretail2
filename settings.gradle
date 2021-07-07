@@ -1,0 +1,4 @@
+include ':drequest'
+include ':coremodule'
+include ':app'
+rootProject.name = "Nexretail"

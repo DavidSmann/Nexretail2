@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:background="@drawable/login_bg"
+
+    android:layout_height="match_parent"
+    tools:context=".view.activity.LoginActivity">
+
+        <TextView
+            android:id="@+id/nexretail"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_alignParentEnd="true"
+            android:text="Nex Retail"/>
+        <TextView
+            android:id="@+id/readyforanything"
+            android:layout_below="@+id/nexretail"
+            android:layout_marginEnd="33dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:text="Ready for anything"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_text_input"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/readyforanything"
+            android:textColorHint="@color/light_grey"
+            android:layout_marginTop="80dp"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_username"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input"
+            android:layout_below="@+id/username_text_input"
+            android:layout_centerHorizontal="true"
+            app:endIconMode="password_toggle"
+            android:textColorHint="@color/light_grey"
+            app:endIconTint="@color/black"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:hint="Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_below="@+id/password_text_input"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:elevation="40dp"
+            android:shadowColor="@color/light_grey"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:text="Forget Password"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/forgetpassword"
+            android:layout_width="149dp"
+            android:layout_height="53.2dp"
+            android:background="@drawable/rounded_corner"
+            android:shadowRadius="3"
+            android:textColor="@color/white"
+            android:text="login"/>
+
+
+
+        <com.nexvis.nexretail.custom.ErrorHandleView
+            android:id="@+id/error_handle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_main_drawer"
+    android:layout_marginTop="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/drawer_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Nex Retail"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_userID"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/name_txt"
+        android:layout_marginStart="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="EM0000000001"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txt_userID"
+        android:layout_marginStart="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_navigation"
+        android:layout_below="@+id/txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="© 2021 NexRetail v1.0"/>
+
+    <View
+        android:id="@+id/view_block_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:translationY="0dp" />
+</RelativeLayout>
