@@ -12,6 +12,7 @@ import com.nexvis.nexretail.custom.NexRetailAlertDialog
 import com.nexvis.nexretail.interactor.LoginInteractor
 import com.nexvis.nexretail.presenter.LoginPresenter
 import com.nexvis.nexretail.custom.ErrorHandleView
+import com.nexvis.nexretail.view.activity.Home.HomeActivity
 import kotlinx.android.synthetic.main.activity_login_screen.*
 
 import org.json.JSONObject

@@ -13,5 +13,8 @@
     <color name="green">#29952D</color>
     <color name="card_green">#34B658</color>
     <color name="ripple">#20000000</color>
-    <color name="bg_color">#FAFAFA</color>
+    <color name="bg_color">#FBFAFA</color>
+    <color name="green_appbar">#248D54</color>
+    <color name="slate">#3D3E53</color>
+    <color name="cloud">#C5C6D0</color>
 </resources>

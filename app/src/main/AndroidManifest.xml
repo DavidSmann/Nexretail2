@@ -17,7 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.HomeActivity"/>
+        <activity android:name=".view.activity.Home.HomeActivity"/>
+        <activity android:name=".view.activity.Book.BookingActivity"/>
+        <activity android:name=".view.activity.Serve.ServeActivity"/>
+        <activity android:name=".view.activity.Room.RoomActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".view.activity.Kitchen.KitchenActivity"/>
+        <activity android:name=".view.activity.OpenBill.OpenBillActivity"/>
+        <activity android:name=".view.activity.Book.BookNowActivity"/>
     </application>
 
 </manifest>

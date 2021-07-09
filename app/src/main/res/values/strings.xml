@@ -22,4 +22,9 @@
     <string name="kitchen">Kitchen</string>
     <string name="report">Report</string>
     <string name="open_bill">Open Bill</string>
+    <string name="booked">Booked</string>
+    <string name="check_in">Checkin</string>
+    <string name="serving">Serving</string>
+    <string name="served">Served</string>
+    <string name="billed">Billed</string>
 </resources>
