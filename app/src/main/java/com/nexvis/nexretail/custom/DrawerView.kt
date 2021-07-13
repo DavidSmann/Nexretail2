@@ -61,7 +61,7 @@ class DrawerView : RelativeLayout {
         // Move content touch able block of profile by scroll
         recycler_view_navigation.setOnScrollChangeListener { _, _, _, _, _ ->
             val offsetY = recycler_view_navigation.computeVerticalScrollOffset()
-            view_block_profile.translationY = -offsetY.toFloat()
+            view_block_profile!!.translationY = -offsetY.toFloat()
         }
     }
 

@@ -25,6 +25,7 @@
         <activity android:name=".view.activity.Kitchen.KitchenActivity"/>
         <activity android:name=".view.activity.OpenBill.OpenBillActivity"/>
         <activity android:name=".view.activity.Book.BookNowActivity"/>
+        <activity android:name=".view.activity.OrderItem.OrderItemActivity"/>
     </application>
 
 </manifest>

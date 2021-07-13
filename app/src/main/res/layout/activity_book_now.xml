@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_color"
     xmlns:tools="http://schemas.android.com/tools">
 
     <include
@@ -11,7 +12,9 @@
         android:layout_height="wrap_content"
         layout="@layout/custom_appbar"/>
 
+
     <LinearLayout
+        android:id="@+id/layout_transaction"
         android:padding="10dp"
         android:layout_below="@+id/appbar"
         android:orientation="horizontal"
@@ -200,10 +203,161 @@
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/layout_booking_info"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_transaction"
+        android:layout_height="wrap_content">
 
+        <EditText
+            android:padding="5dp"
+            android:hint="@string/order_number"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:background="@drawable/custom_border"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:padding="5dp"
+            android:hint="@string/room"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_border"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:hint="@string/customer"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:background="@drawable/custom_border"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:hint="@string/phone"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:background="@drawable/custom_border"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:hint="@string/order_date"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:background="@drawable/custom_border"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:hint="@string/checkin"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:background="@drawable/custom_border"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:hint="@string/check_out"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:background="@drawable/custom_border"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_booking"
+        android:layout_below="@+id/layout_booking_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/green"
+        app:tabSelectedTextColor="@color/green"
+        app:tabTextColor="@color/black"
+        android:background="@color/bg_color">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_book_now"
+        android:layout_below="@+id/tabLayout_booking"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <TextView
+        android:id="@+id/txt_subtotal_label"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_below="@+id/vp_book_now"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Sub Total :"/>
+
+    <TextView
+        android:id="@+id/txt_subtotal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/vp_book_now"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="$ 239"/>
+
+    <TextView
+        android:id="@+id/txt_discount_label"
+        android:layout_below="@+id/txt_subtotal_label"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Discount :"/>
+
+    <TextView
+        android:id="@+id/txt_discount"
+        android:layout_below="@+id/txt_subtotal"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="$ 0"/>
+
+    <TextView
+        android:id="@+id/txt_total_label"
+        android:layout_marginEnd="70dp"
+        android:layout_below="@+id/txt_discount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:text="Total :"/>
+
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txt_discount"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="$ 0"/>
 
     <com.nexvis.nexretail.custom.ErrorHandleView
         android:id="@+id/error_handle_view"

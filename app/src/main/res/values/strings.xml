@@ -27,4 +27,11 @@
     <string name="serving">Serving</string>
     <string name="served">Served</string>
     <string name="billed">Billed</string>
+    <string name="order_number">Order Number</string>
+    <string name="customer">Customer</string>
+    <string name="phone">Phone</string>
+    <string name="order_date">Order Date</string>
+    <string name="check_out">Check Out</string>
+    <string name="checkin">Check In</string>
+    <string name="order_item">Order Item</string>
 </resources>
